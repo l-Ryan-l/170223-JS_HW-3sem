@@ -14,11 +14,11 @@
 
 const tempCelcius = parseFloat(prompt("Введите температуру в Цельсиях"));
 let tempFahr = "";
-ConvertCToF(tempCelcius)
-alert(`${tempCelcius} градусов по Цельсию, равно ${tempFahr} градусов по Фаренгейту.`)
+ConvertCToF(tempCelcius);
+alert(`${tempCelcius} градусов по Цельсию, равно ${tempFahr} градусов по Фаренгейту.`);
 
 function ConvertCToF(tempCelsius){
     tempFahr = 1.8 * tempCelcius + 32;
-    return tempFahr
+    return tempFahr;
 }
 
