@@ -12,13 +12,12 @@
 градусы Фаренгейта = (9 / 5) * градусы Цельсия + 32
 */
 
-const tempCelcius = parseFloat(prompt("Введите температуру в Цельсиях"));
-let tempFahr = "";
-ConvertCToF(tempCelcius);
-alert(`${tempCelcius} градусов по Цельсию, равно ${tempFahr} градусов по Фаренгейту.`);
+const tempCelcius = Number.parseFloat(prompt("Введите температуру в Цельсиях"));
+let tempFahr = convertCToF(tempCelcius);
+convertCToF(tempCelcius);
+alert(`${tempCelcius} градусов по Цельсию, равно ${Math.round(tempFahr * 100) / 100} градусов по Фаренгейту.`);
 
-function ConvertCToF(tempCelsius){
-    tempFahr = 1.8 * tempCelcius + 32;
-    return tempFahr;
+function convertCToF(tempCelsius) {
+    return 1.8 * tempCelcius + 32;    
 }
 
